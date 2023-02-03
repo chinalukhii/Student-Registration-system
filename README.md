@@ -21,6 +21,5 @@ Documentation
 * you need to run the sql tab you need to enter CREATE SCHEMA IF NOT EXISTS 'tin'; and then click execute
 * if init.js has sync({force: true}) in line 16, you don't need to create tables and fill them with initial values, the application will remove the current tables and insert the data contained in init.js wpp, enter the tin database and the sql tab and paste the content of the sql script creating the table (sql directory tin_create file) and the content of the sql script supplementing the tables (sql directory tin_init file)
 * the base is ready to use
-3. Current database schema diagram
-* is located in the sql directory (project.png) and after starting the application on the home page
+
 
