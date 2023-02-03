@@ -1,0 +1,35 @@
+<%- include('../fragments/header.ejs') %>
+    <div class="main">
+        <h2><%=__('teacherss-page.title')%></h2>
+        
+        <br>
+        <table class="table">
+            <thead>
+                <tr id="mainRow">
+
+                    <th><%=__('teacherss-page.table.model-name')%></th>
+                    <th><%=__('teacherss-page.table.transmition-type')%></th>
+                    <th><%=__('teacherss-page.table.actions')%></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let tcher of teacherss) { %>
+                <tr>
+                    <td><%= tcher.teacherName %></td>
+                    <td><%= tcher.teacherSurname %></td>
+                    <td>
+                        <ul class="list">
+                            <li><a href="/tcher/details/<%=tcher._id%>" class="list-action-button-details"><%=__('teacherss-page.table.action-buttons.details')%></a></li>
+                            <li><a href="/tcher/edit/<%=tcher._id%>" class="list-action-button-edit"><%=__('teacherss-page.table.action-buttons.edit')%></a></li>
+                            <li><a href="/tcher/delete/<%=tcher._id%>" class="list-action-button-delete"><%=__('teacherss-page.table.action-buttons.delete')%></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <p><a href="/tcher/add" class="button-add"><%=__('teacherss-page.buttons.add-new-tcher')%></a></p>
+    
+    </div>
+    <%- include('../fragments/footer.ejs') %>
+    

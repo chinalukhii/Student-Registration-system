@@ -1,0 +1,210 @@
+{
+	"nav": {
+		"home": "મુખ્ય",
+		"students": "વિદ્યાર્થીઓ",
+		"instructors": "અભ્યાસક્રમો",
+		"driving-lessons": "નોંધણી",
+		"teacherss": "શિક્ષકો",
+		"exams": "પરીક્ષાઓ"
+	},
+	"login": {
+		"email": "ઇમેઇલ:",
+		"password": "પાસવર્ડ:",
+		"login": "પ્રવેશ કરો/Login:",
+		"sign-in": "સાઇન ઇન કરો:",
+		"sign-out": "Sign out",
+		"logged-in-as": "તમે આ રીતે લૉગ ઇન થયા છો: ",
+		"error": "ઈ મેઈલ અથવા પાસવર્ડ ખોટો છે!"
+	},
+	"home-page": {
+		"title": "આઈટી ટેકનોલોજીની લાલ અને સફેદ એકેડેમીમાં આપનું સ્વાગત છે!",
+		"description1": "જો તમે અમારી એકેડમીમાં પહેલાથી જ નોંધણી કરાવો છો, તો કૃપા કરીને પેજ પર લૉગિન કરવા માટે તમારા પ્રદાન કરેલ ઈમેલ અને પાસવર્ડનો ઉપયોગ કરો. લૉગિન કર્યા પછી તમે તમારી નોંધણી વિગતો અને પરીક્ષા અને શિક્ષક વિશેની વિગતો જોઈ શકશો.",
+		"description2": "home-page.description2"
+	},
+	"students-page": {
+		"add-student-page-title": "નવો વિદ્યાર્થી",
+		"details-student-page-title": "વિદ્યાર્થી વિગતો",
+		"edit-student-page-title": "વિદ્યાર્થી સંપાદિત(edit)કરો",
+		"title": "વિદ્યાર્થીઓની યાદી",
+		"table": {
+			"name": "નામ:",
+			"surname": "છેલ્લું નામ/અટક:",
+			"email": "ઈમેલ",
+			"password": "પાસવર્ડ",
+			"phone-number": "ફોન નંબર",
+			"adress": "સરનામું",
+			"birth-date": "જન્મતારીખ",
+			"actions": "ક્રિયાઓ",
+			"action-buttons": {
+				"details": "વિગતો",
+				"edit": "સંપાદિત કરો/ edit",
+				"delete": "કાઢી નાખો"
+			}
+		},
+		"buttons": {
+			"add-new-student": "નવો વિદ્યાર્થી ઉમેરો",
+			"return": "Return",
+			"edit": "સંપાદિત કરો/ edit",
+			"edit-student": "સંપાદિત કરો/ edit student",
+			"cancel": "રદ કરો"
+		},
+		"student-details-title": "વિદ્યાર્થી વિગતો",
+		"details-of-lessons-title": "વિગતો નોંધણી ",
+		"edit-student-title": "સંપાદિત કરો/ edit student",
+		"lessons-table": {
+			"course": "અભ્યાસક્રમ",
+			"start-time": "Start date",
+			"end-time": "અંતિમ તારીખ"
+		}
+	},
+	"verification": {
+		"2-60-symbols": "2-60 શબ્દો",
+		"phone-number-example": "દા.ત. 111222333",
+		"10-60-symbols": "10-60 શબ્દો",
+		"email": "સાચો ઈમેલ સરનામું",
+		"select-student": "-- વિદ્યાર્થી પસંદ કરો --",
+		"select-course": "-- કોર્સ પસંદ કરો --",
+		"select-tcher": "-- શિક્ષકો પસંદ કરો  --",
+		"password": "માન્ય પાસવર્ડ"
+	},
+	"errors": {
+		"the-field-is-required": "ક્ષેત્ર જરૂરી છે.",
+		"test": "ક્ષેત્ર જરૂરી છે.",
+		"2-60-symbols": "ફીલ્ડમાં 2 થી 60 અક્ષરો હોવા જોઈએ",
+		"9-symbols": "ફીલ્ડમાં 9 અક્ષરો હોવા જોઈએ",
+		"birthdate-bigger-current": "જન્મ તારીખ વર્તમાન તારીખ કરતા ઓછી હોવી જોઈએ.",
+		"date-should-be-in-future": "તારીખ ભવિષ્યની હોવી જોઈએ",
+		"end-date-after-start-date": "સમાપ્તિ તારીખ પ્રારંભ તારીખ પછીની હોવી જોઈએ.",
+		"valid-email": "ફીલ્ડમાં માન્ય ઇમેઇલ સરનામું હોવું જોઈએ",
+		"email-already-in-use": "તમે દાખલ કરેલ ઇમેઇલ સરનામું પહેલેથી ઉપયોગમાં છે.",
+		"phone-already-in-use": "તમે દાખલ કરેલ ફોન નંબર પહેલેથી ઉપયોગમાં છે.",
+		"form-contains-errors": "ફોર્મમાં ભૂલો છે!",
+		"question-add-record": "શું તમે રેકોર્ડ ઉમેરવા માંગો છો?",
+		"course_date_lessthan_today": "errors.course_date_lessthan_today"
+	},
+	"courses_page": {
+		"title": "કોર્સની યાદી",
+		"table": {
+			"name": "અભ્યાસક્રમનું નામ",
+			"price": "રકમ",
+			"courses_date": "અભ્યાસક્રમની તારીખ",
+			"actions": "ક્રિયાઓ",
+			"action-buttons": {
+				"details": "વિગતો",
+				"edit": "સંપાદિત કરો/ edit",
+				"delete": "કાઢી નાખો"
+			},
+			"email": "courses_page.table.email",
+			"has-car": "courses_page.table.has-car"
+		},
+		"buttons": {
+			"add-new-course": "નવો કોર્સ ઉમેરો",
+			"return": "પરત",
+			"edit": "સંપાદિત કરો/ edit",
+			"edit-course": "સંપાદિત કરો/ edit કોર્સ",
+			"cancel": "રદ કરો"
+		},
+		"details-of-lessons-title": "વિગતો of કોર્સ",
+		"lessons-table": {
+			"student": "સંપૂર્ણ વિદ્યાર્થીનું નામ",
+			"start-time": "પ્રારંભ સમય",
+			"end-time": "સમાપ્તિ સમય"
+		},
+		"details-courses_page-title": "વિગતો કોર્સ",
+		"add-courses_page-title": "ઉમેરો કોર્સ",
+		"edit-course-page-title": "સંપાદિત કરો/ edit course"
+	},
+	"enrollment-page": {
+		"title": "નોંધણીની સૂચિ",
+		"table": {
+			"student": "વિદ્યાર્થી",
+			"course": "કોર્સ",
+			"start-time": "પ્રારંભ સમય",
+			"end-time": "સમાપ્તિ સમય",
+			"Teacher-Name": "શિક્ષક",
+			"actions": "ક્રિયાઓ",
+			"action-buttons": {
+				"details": "વિગતો",
+				"edit": "સંપાદિત કરો/ edit",
+				"delete": "કાઢી નાખો"
+			},
+			"category": "enrollment-page.table.category"
+		},
+		"buttons": {
+			"add-new-lesson": "ઉમેરો new નોંધણી(enrollment)",
+			"return": "Return",
+			"edit": "સંપાદિત કરો",
+			"edit-lesson": "સંપાદિત કરો નોંધણી(enrollment)",
+			"cancel": "રદ કરો"
+		},
+		"details-lesson-page-title": "વિગતો નોંધણી",
+		"add-lesson-page-title": "ઉમેરો નોંધણી",
+		"edit-lesson-page-title": "સંપાદિત કરો"
+	},
+	"Lesson": {
+		"stuId cannot be null": "વિદ્યાર્થી પસંદ કરવું આવશ્યક છે",
+		"insId cannot be null": "કોર્સ પસંદ કરવું આવશ્યક છે",
+		"texId cannot be null": "શિક્ષક પસંદ કરવું આવશ્યક છે"
+	},
+	"teacherss-page": {
+		"title": "શિક્ષકોની યાદી",
+		"buttons": {
+			"add-new-tcher": "ઉમેરો નવા શિક્ષક ",
+			"return": "પરત",
+			"edit": "સંપાદિત કરો/ edit",
+			"edit-tcher": "સંપાદિત કરો/ edit teacher",
+			"cancel": "રદ કરો"
+		},
+		"tcher-details-title": "શિક્ષક વિગતો",
+		"details-of-tcher-title": "વિગતો of શિક્ષક",
+		"edit-tcher-title": "સંપાદિત કરો",
+		"table": {
+			"model-name": "શિક્ષક નામ ",
+			"transmition-type": "છેલ્લું નામ",
+			"actions": "ક્રિયા",
+			"action-buttons": {
+				"details": "વિગતો",
+				"edit": "સંપાદિત કરો(edit)",
+				"delete": "કાઢી નાખો"
+			}
+		},
+		"add-tcher-page-title": "ઉમેરો શિક્ષક",
+		"edit-tcher-page-title": "સંપાદિત કરો",
+		"details-tcher-page-title": "શિક્ષક વિગતો"
+	},
+	"exams-page": {
+		"title": "પરીક્ષાઓની યાદી",
+		"table": {
+			"student": "વિદ્યાર્થી",
+			"course": "કોર્સ",
+			"start-time": "પ્રારંભ સમય",
+			"Teacher-Name": "શિક્ષક",
+			"status": "પરીક્ષાની સ્થિતિ",
+			"actions": "ક્રિયાઓ",
+			"action-buttons": {
+				"details": "વિગતો",
+				"edit": "સંપાદિત કરો",
+				"delete": "કાઢી નાખો"
+			}
+		},
+		"buttons": {
+			"add-new-exam": "ઉમેરો નવી પરીક્ષા",
+			"return": "પરત",
+			"edit": "સંપાદિત કરો",
+			"edit-exam": "સંપાદિત કરો પરીક્ષા",
+			"cancel": "રદ કરો"
+		},
+		"details-exam-page-title": "વિગતો પરીક્ષા",
+		"add-exam-page-title": "ઉમેરો પરીક્ષા",
+		"edit-exam-page-title": "સંપાદિત કરો પરીક્ષા"
+	},
+	"Exam": {
+		"stuId cannot be null": "વિદ્યાર્થી પસંદ કરવું આવશ્યક છે",
+		"insId cannot be null": "કોર્સ પસંદ કરવું આવશ્યક છે",
+		"texId cannot be null": "શિક્ષક પસંદ કરવું આવશ્યક છે"
+	},
+	"Student": {
+		"password cannot be null": "પાસવર્ડ ખાલી હોઈ શકતો નથી"
+	},
+	"તમે દાખલ કરેલ ફોન નંબર પહેલેથી ઉપયોગમાં છે.": "તમે દાખલ કરેલ ફોન નંબર પહેલેથી ઉપયોગમાં છે."
+}

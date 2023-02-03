@@ -1,0 +1,219 @@
+{
+	"nav": {
+		"home": "Main",
+		"students": "Students",
+		"instructors": "Course",
+		"driving-lessons": "Enrollment",
+		"teacherss": "Teacher",
+		"exams": "Exams"
+	},
+	"login": {
+		"email": "Email:",
+		"password": "Password:",
+		"login": "Login",
+		"sign-in": "Sign in",
+		"sign-out": "Sign out",
+		"logged-in-as": "You have logged in as:",
+		"error": "Invalid email or password"
+	},
+	"home-page": {
+		"title": "Welcome to red & white acdemy of IT technology!",
+		"description1": "If you are alreday register in our acdemy please use your provided email and password to login, on page. After login you will be able to view your enrollment details and details about exam and teacher.",
+		"description2": "home-page.description2"
+	},
+	"students-page": {
+		"add-student-page-title": "New Student",
+		"details-student-page-title": "Student details",
+		"edit-student-page-title": "Edit student",
+		"title": "List of students",
+		"table": {
+			"name": "Name",
+			"surname": "Last name",
+			"email": "Email",
+			"password": "Password",
+			"phone-number": "Phone Number",
+			"adress": "Address",
+			"birth-date": "Birth Date",
+			"actions": "Actions",
+			"action-buttons": {
+				"details": "Details",
+				"edit": "Edit",
+				"delete": "Delete"
+			}
+		},
+		"buttons": {
+			"add-new-student": "Add new student",
+			"return": "Return",
+			"edit": "Edit",
+			"edit-student": "Edit student",
+			"cancel": "Cancel"
+		},
+		"student-details-title": "Student details",
+		"details-of-lessons-title": "Details of Lessons",
+		"edit-student-title": "Edit student",
+		"lessons-table": {
+			"course": "Course",
+			"start-time": "Start date",
+			"end-time": "End date",
+			"category": "students-page.lessons-table.category"
+		}
+	},
+	"verification": {
+		"2-60-symbols": "2-60 symbols",
+		"phone-number-example": "ex. 571234839",
+		"10-60-symbols": "10-60 symbols",
+		"email": "correct email address",
+		"select-student": "-- Select Student --",
+		"select-course": "-- Select Course --",
+		"select-tcher": "-- Select Teacher --",
+		"password": "Valid password"
+	},
+	"errors": {
+		"the-field-is-required": "The field is required.",
+		"test": "The field is required.",
+		"2-60-symbols": "The field should contain between 2 and 60 characters",
+		"9-symbols": "The field should contain 9 characters",
+		"birthdate-bigger-current": "Birthdate should be less than current date.",
+		"date-should-be-in-future": "The Date should be in future.",
+		"end-date-after-start-date": "End Date should be after Start Date.",
+		"valid-email": "The field should contain a valid email address",
+		"email-already-in-use": "The email adress you entered is already in use.",
+		"phone-already-in-use": "The Phone Number you entered is already in use.",
+		"form-contains-errors": "Form contains errors!",
+		"question-add-record": "Do you want to add the record?",
+		"course_date_lessthan_today": "errors.course_date_lessthan_today",
+		"license-date-less-current-date": "errors.license-date-less-current-date"
+	},
+	"courses_page": {
+		"title": "List of Course",
+		"table": {
+			"name": "Name",
+			"price": "Amount",
+			"courses_date": "Course Date",
+			"actions": "Actions",
+			"action-buttons": {
+				"details": "Details",
+				"edit": "Edit",
+				"delete": "Delete"
+			},
+			"email": "courses_page.table.email",
+			"has-car": "courses_page.table.has-car"
+		},
+		"buttons": {
+			"add-new-course": "Add new course",
+			"return": "Return",
+			"edit": "Edit",
+			"edit-course": "Edit course",
+			"cancel": "Cancel"
+		},
+		"details-of-lessons-title": "Details of course",
+		"lessons-table": {
+			"student": "Student",
+			"start-time": "Start time",
+			"end-time": "End time",
+			"category": "courses_page.lessons-table.category"
+		},
+		"details-courses_page-title": "Details course",
+		"add-courses_page-title": "Add course",
+		"edit-course-page-title": "Edit course"
+	},
+	"enrollment-page": {
+		"title": "List of enrollment",
+		"table": {
+			"student": "Student",
+			"course": "Course",
+			"start-time": "Start time",
+			"end-time": "End time",
+			"Teacher-Name": "Teacher",
+			"actions": "Actions",
+			"action-buttons": {
+				"details": "Details",
+				"edit": "Edit",
+				"delete": "Delete"
+			},
+			"category": "enrollment-page.table.category"
+		},
+		"buttons": {
+			"add-new-lesson": "Add new enrollment",
+			"return": "Return",
+			"edit": "Edit",
+			"edit-lesson": "Edit enrollment",
+			"cancel": "Cancel"
+		},
+		"details-lesson-page-title": "Details enrollment",
+		"add-lesson-page-title": "Add enrollment",
+		"edit-lesson-page-title": "Edit enrolment"
+	},
+	"Lesson": {
+		"stuId cannot be null": "Student must be choosen",
+		"insId cannot be null": "Course must be choosen",
+		"texId cannot be null": "Teacher must be choosen"
+	},
+	"teacherss-page": {
+		"title": "List of teachers",
+		"buttons": {
+			"add-new-tcher": "Add new teacher",
+			"return": "Return",
+			"edit": "Edit",
+			"edit-tcher": "Edit teacher",
+			"cancel": "Cancel"
+		},
+		"tcher-details-title": "Teacher details",
+		"details-of-tcher-title": "Details of Teacher",
+		"edit-tcher-title": "Edit teacher",
+		"table": {
+			"model-name": "Teacher Name",
+			"transmition-type": "Last name",
+			"actions": "Action",
+			"action-buttons": {
+				"details": "Details",
+				"edit": "Edit",
+				"delete": "Delete"
+			}
+		},
+		"add-tcher-page-title": "Add teacher",
+		"edit-tcher-page-title": "Edit teacher",
+		"details-tcher-page-title": "Teacher details"
+	},
+	"exams-page": {
+		"title": "List of exams",
+		"table": {
+			"student": "Student",
+			"course": "Course",
+			"start-time": "Start time",
+			"Teacher-Name": "Teacher",
+			"status": "Exam status",
+			"actions": "Actions",
+			"action-buttons": {
+				"details": "Details",
+				"edit": "Edit",
+				"delete": "Delete"
+			}
+		},
+		"buttons": {
+			"add-new-exam": "Add new exam",
+			"return": "Return",
+			"edit": "Edit",
+			"edit-exam": "Edit exam",
+			"cancel": "Cancel"
+		},
+		"details-exam-page-title": "Details exam",
+		"add-exam-page-title": "Add exam",
+		"edit-exam-page-title": "Edit exam"
+	},
+	"Exam": {
+		"stuId cannot be null": "Student must be choosen",
+		"insId cannot be null": "Course must be choosen",
+		"texId cannot be null": "Teacher must be choosen"
+	},
+	"Course": {
+		"password cannot be null": "Password can not be empty"
+	},
+	"Student": {
+		"password cannot be null": "Password can not be empty"
+	},
+	"Invalid validator function": " allowNull",
+	"Teacher": {
+		"password cannot be null": "Teacher.password cannot be null"
+	}
+}

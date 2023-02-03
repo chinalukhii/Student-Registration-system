@@ -1,0 +1,48 @@
+
+<%- include('../fragments/header.ejs') %>
+
+    <div class="main">
+        <h2><%=__('exams-page.title')%></h2>
+        
+        <br>
+        <table class="table">
+            <thead>
+                <tr id="mainRow">
+                    <th><%=__('exams-page.table.student')%></th>
+                    <th><%=__('exams-page.table.course')%></th>
+                    <th><%=__('exams-page.table.Teacher-Name')%></th>
+                    <th><%=__('exams-page.table.start-time')%></th>
+                    <th><%=__('exams-page.table.status')%></th>
+                    <th><%=__('exams-page.table.actions')%></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let exam of exams) { %>
+                <tr>
+                    <td><%=exam.student.firstName%> <%=exam.student.lastName%></td>
+                    <td><%= exam.course.name%></td>
+                    <td><%= exam.tcher.teacherName %></td>
+                    <td><%= exam.startDate%></td>
+                    <td><%= exam.status %></td>
+                    <td>
+                        <ul class="list">
+                            <li><a href="/exam/details/<%=exam._id%>" class="list-action-button-details"><%=__('exams-page.table.action-buttons.details')%></a></li>
+                            
+                             <% if (loggedUserType == "administrator") { %>
+                                <li><a href="/exam/edit/<%=exam._id%>" class="list-action-button-edit"><%=__('exams-page.table.action-buttons.edit')%></a></li>
+                                <% } %>
+                                <% if (loggedUserType == "instructor" || loggedUserType == "teacher") { %>
+                                <li><a href="/exam/delete/<%=exam._id%>" class="list-action-button-delete"><%=__('exams-page.table.action-buttons.delete')%></a></li>
+                            <% } %>
+                        </ul>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <% if (loggedUserType == "administrator") { %>
+            <p><a href="/exam/add" class="button-add"><%=__('exams-page.buttons.add-new-exam')%></a></p>
+        <% } %>
+    </div>
+    
+    <%- include('../fragments/footer.ejs') %>

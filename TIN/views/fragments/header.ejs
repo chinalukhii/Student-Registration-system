@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h2 class="main_heading">R & W</h2>
+            <ul class="nav-links">
+                <li><a href="/" class="<%= navLocation == 'main' ? 'active' : ''%>"><h3><%=__('nav.home')%></h3></a></li>
+                <% if(loggedUser) { %>
+                    <% if(loggedUserType === "administrator") { %>
+                        <li><a href="/student" class="<%= navLocation == 'student' ? 'active' : '' %>"><h3><%=__('nav.students')%></h3></a></li>
+                        <li><a href="/course" class="<%= navLocation == 'course' ? 'active' : '' %>"><h3><%=__('nav.instructors')%></h3></a></li>
+                        <li><a href="/tcher" class="<%= navLocation == 'tcher' ? 'active' : '' %>"><h3><%=__('nav.teacherss')%></h3></a></li>
+                    <% } %>
+                    <li><a href="/lesson" class="<%= navLocation == 'lesson' ? 'active' : ''%>" ><h3><%=__('nav.driving-lessons')%></h3></a></li>
+                    <li><a href="/exam" class="<%= navLocation == 'exam' ? 'active' : '' %>"><h3><%=__('nav.exams')%></h3></a></li>
+                <% } %>
+
+            </ul>
+            <ul class="nav-links">
+                <li><a href="/changeLang/gj" class="<%= lang == 'gj' ? 'active' : ''%>">GJ</a></li>
+                <li><a href="/changeLang/en" class="<%= lang == 'en' ? 'active' : ''%>">EN</a></li>
+            </ul>
+            <% if(!loggedUser) { %>
+                <div id="login">
+                    <h5><%=__('login.login')%></h5>
+                    <form method="post" action="/login" novalidate>
+                        <label for="loginEmail"><%=__('login.email')%></label>
+                        <input type="email" id="loginEmail" name="email">
+            
+                        <label for="loginPassword"><%=__('login.password')%></label>
+                        <input type="password" id="loginPassword" name="password">
+            
+                        <input type="submit" value="<%=__('login.sign-in')%>">
+                        <span id="loginErrors"><%= loginError ? loginError : ''%></span>
+                    </form>
+                </div>
+            <% } else { %>
+                <span><%=__('login.logged-in-as')%> <%=loggedUser.email%></span><br>
+                <a href="/logout"><%=__('login.sign-out')%></a>
+            <% } %>
+        </nav>
+       
+    </div>
+</body>
+</html>

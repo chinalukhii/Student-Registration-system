@@ -1,0 +1,79 @@
+
+    <%- include('../fragments/header.ejs') %>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationTeacher.js"></script>
+    <script type="application/javascript" src="../../js/validationStudentForm.js"></script>
+    <div class="main">
+     
+        <h2><%= pageTitle %></h2>
+          
+        <form class="form" method="post" action="<%=formAction%>" novalidate onsubmit="return validateForm();">           
+            <input type="hidden" name="_id" value="<%=tcher._id %>">
+
+            <label for="teacherName"><%=__('teacherss-page.table.model-name')%> <span class="symbol-required">*</span></label>
+            <input id="teacherName" name="teacherName" type="text" placeholder="<%=__('verification.2-60-symbols')%>" class="<%= validationErrors.find(e => e.path.includes('teacherName')) ? 'error-input' : ''%>"  required value="<%= tcher.teacherName %>" <%= (formMode == 'showDetails') ? 'disabled' : '' %>/>
+            <span id="errorModelName" class="errors-text">
+                <% if(validationErrors.find(e => e.path.includes('teacherName'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('teacherName')).message) %>
+                <% } %>
+            </span>
+
+            <label for="teacherSurname"><%=__('teacherss-page.table.transmition-type')%> <span class="symbol-required">*</span></label>
+            <input id="teacherSurname" name="teacherSurname" type="text" placeholder="<%=__('verification.2-60-symbols')%>" class="<%= validationErrors.find(e => e.path.includes('teacherSurname')) ? 'error-input' : ''%>" required value="<%= tcher.teacherSurname %>" <%= (formMode == 'showDetails') ? 'disabled' : '' %>/>
+            <span id="errorTransmitionType" class="errors-text">
+                <% if(validationErrors.find(e => e.path.includes('teacherSurname'))) { %>
+                    <%= __(validationErrors.find(e => e.path.includes('teacherSurname')).message) %>
+                <% } %></span>
+
+
+                <label for="email"><%=__('students-page.table.email')%> <span class="symbol-required">*</span></label>
+                <input id="email" name="email" placeholder="<%=__('verification.email')%>" class="<%= validationErrors.find(e => e.path.includes('email')) ? 'error-input' : ''%>" type="text" value="<%= tcher.email %>" <%= (formMode == 'showDetails') ? 'disabled' : '' %>/>
+                <span id="errorEmail" class="errors-text">
+                    <% if(validationErrors.find(e => e.path.includes('email'))) { %>
+                        <%= __(validationErrors.find(e => e.path.includes('email')).message) %>
+                    <% } %>
+                </span>
+                    
+                <label for="password"><%=__('students-page.table.password')%> <span class="symbol-required">*</span></label>
+                <input id="password" name="password" type="password" placeholder="<%=__('verification.password')%>" class="<%= validationErrors.find(e => e.path.includes('password')) ? 'error-input' : ''%>" value="<%= tcher.password %>" <%= (formMode == 'showDetails') ? 'disabled' : '' %>/>
+                <span id="errorPassword" class="errors-text">
+                    <% if(validationErrors.find(e => e.path.includes('password'))) { %>
+                        <%= __(validationErrors.find(e => e.path.includes('password')).message) %>
+                    <% } %>
+                </span>    
+
+
+            <% if(formMode=='showDetails') { %>
+                <div class="section-buttons">
+                    <a href="/tcher/edit/<%= tcher._id%>" class="form-button-submit-add"><%=__('teacherss-page.buttons.edit')%></a>
+                </div>
+            <% } %>
+              
+
+            <div class="form-buttons">
+                <p id="errorSummary" style="visibility: hidden;"><%=__('errors.form-contains-errors')%></p>
+
+                <% if(formMode!='showDetails') { %>
+                    <input type="submit" class="form-button-submit-add" value="<%=btnLabel%>" />
+                    <a href="/tcher" class="form-button-cancel"><%=__('teacherss-page.buttons.cancel')%></a>
+                <% } else { %>
+                    <a href="/tcher" class="form-button-cancel"><%=__('teacherss-page.buttons.return')%></a>
+                <% } %>
+            </div>
+        </form>  
+    </div>
+    <div style="display: none">
+        <span id="errors.the-field-is-required"><%= __('errors.the-field-is-required') %></span>
+        <span id="errors.2-60-symbols"><%= __('errors.2-60-symbols') %></span>
+        <span id="errors.9-symbols"><%= __('errors.9-symbols') %></span>
+        <span id="errors.birthdate-bigger-current"><%= __('errors.birthdate-bigger-current') %></span>
+        <span id="errors.date-should-be-in-future"><%= __('errors.date-should-be-in-future') %></span>
+        <span id="errors.end-date-after-start-date"><%= __('errors.end-date-after-start-date') %></span>
+        <span id="errors.course_date_lessthan_today"><%= __('errors.course_date_lessthan_today') %></span>
+        <span id="errors.valid-email"><%= __('errors.valid-email') %></span>
+        <span id="errors.email-already-in-use"><%= __('errors.email-already-in-use') %></span>
+        <span id="errors.phone-already-in-use"><%= __('errors.phone-already-in-use') %></span>
+        <span id="errors.form-contains-errors"><%= __('errors.form-contains-errors') %></span>
+        <span id="errors.question-add-record"><%= __('errors.question-add-record') %></span>
+     </div>
+    <%- include('../fragments/footer.ejs') %>

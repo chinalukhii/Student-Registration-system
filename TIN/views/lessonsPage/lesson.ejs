@@ -1,0 +1,51 @@
+
+    <%- include('../fragments/header.ejs') %>
+
+    <div class="main">
+        <h2><%=__('enrollment-page.title')%></h2>
+        
+        <br>
+        <table class="table">
+            <thead>
+                <tr id="mainRow">
+
+                    <th><%=__('enrollment-page.table.student')%></th>
+                    <th><%=__('enrollment-page.table.course')%></th>
+                    <th><%=__('enrollment-page.table.start-time')%></th>
+                    <th><%=__('enrollment-page.table.end-time')%></th>
+                    <th><%=__('enrollment-page.table.Teacher-Name')%></th>
+                   
+                    <th><%=__('enrollment-page.table.actions')%></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let lesson of lessns) { %>
+                <tr>
+                    <td><%=lesson.student.firstName%> <%=lesson.student.lastName%></td>
+                    <td><%= lesson.course.name%></td>
+                    <td><%= lesson.startDate%></td>
+                    <td><%= lesson.endDate%></td>
+                    <td><%= lesson.tcher.teacherName %></td>
+               
+                    <td>
+                        <ul class="list">
+                            <li><a href="/lesson/details/<%=lesson._id%>" class="list-action-button-details"><%=__('enrollment-page.table.action-buttons.details')%></a></li>
+                            
+                             <% if (loggedUserType == "administrator") { %>
+                                <li><a href="/lesson/edit/<%=lesson._id%>" class="list-action-button-edit"><%=__('enrollment-page.table.action-buttons.edit')%></a></li>
+                            <% } %>
+                            <% if (loggedUserType == "teacher" || loggedUserType == "administrator") { %>
+                                <li><a href="/lesson/delete/<%=lesson._id%>" class="list-action-button-delete"><%=__('enrollment-page.table.action-buttons.delete')%></a></li>
+                            <% } %>
+                        </ul>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <% if (loggedUserType == "administrator") { %>
+            <p><a href="/lesson/add" class="button-add"><%=__('enrollment-page.buttons.add-new-lesson')%></a></p>
+        <% } %>
+    </div>
+    
+    <%- include('../fragments/footer.ejs') %>
