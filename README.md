@@ -22,5 +22,6 @@ Documentation
 * if init.js has sync({force: true}) in line 16, you don't need to create tables and fill them with initial values, the application will remove the current tables and insert the data contained in init.js wpp, enter the tin database and the sql tab and paste the content of the sql script creating the table (sql directory tin_create file) and the content of the sql script supplementing the tables (sql directory tin_init file)
 * the base is ready to use
 
+Admin Login view
 
 <img width="1440" alt="Screenshot 2023-02-07 at 11 46 16 AM" src="https://user-images.githubusercontent.com/124355163/217224219-cdabae8b-9f1b-43f3-a45e-e423975ea3b7.png">
