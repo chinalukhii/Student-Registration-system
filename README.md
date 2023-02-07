@@ -25,3 +25,15 @@ Documentation
 Admin Login view
 
 <img width="1440" alt="Screenshot 2023-02-07 at 11 46 16 AM" src="https://user-images.githubusercontent.com/124355163/217224219-cdabae8b-9f1b-43f3-a45e-e423975ea3b7.png">
+
+<b>view from admin login</b>
+<img width="1440" alt="Screenshot 2023-02-07 at 11 46 37 AM" src="https://user-images.githubusercontent.com/124355163/217224509-074e5593-b528-434a-a8d8-c15c71287bc2.png">
+
+<b>Internationalization on website with two lang</b>
+
+<img width="1440" alt="Screenshot 2023-02-07 at 11 46 47 AM" src="https://user-images.githubusercontent.com/124355163/217224745-0c8fb6c5-46ec-449b-bc87-020269632ff7.png">
+
+View from student login
+<img width="1440" alt="Screenshot 2023-02-07 at 11 47 10 AM" src="https://user-images.githubusercontent.com/124355163/217224796-d02959ce-3002-43cb-bd34-bc389237844b.png">
+
+
