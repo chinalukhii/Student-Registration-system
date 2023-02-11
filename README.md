@@ -8,6 +8,9 @@
 * ejs
 * bcryptjs
 
+**About project**
+-the student registraton system is created 
+
 **Documentation**
 1. Project start-up instructions
 * unpack the archive with the source code
